@@ -2,24 +2,18 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: blue;
+  color: rgb(255, 255, 255);
 }
-:root {
-  --PrimaryColorD: #110a30;
-  --DivideColor: #d2d0ff;
-  --PrimaryText: #5d5ea1;
-  --TextIcon: #d5d0f2;
-  --PrimaryColorL: #ffffff;
-}
+
 body {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 200;
-  color: var(--TextIcon);
-  background-color: var(--PrimaryColorD);
+  color: white;
+  background-color: ghostwhite;
 }
 .App {
   width: 100%;
-  background-color: #94bcb5;
+  background-color: #153d54;
   color: #ffffff;
 }
 
@@ -41,26 +35,29 @@ body {
   width: 100%;
   justify-content: space-evenly;
   align-items: center;
-  box-shadow: 0px 6px 6px 0 var(--DivideColor);
+  box-shadow: 0px 6px 6px 0 rgb(181, 157, 157);
 }
 .sumary__list button {
-  height: 35px;
-  width: 120px;
+  height: auto;
+  width: fit-content;
+  padding: 5px;
   border: none;
-  background-color: var(--TextIcon);
-  color: var(--PrimaryColorD);
+  border-radius: 15px;
+  background-color: rgb(27, 148, 161);
+  color: white;
   box-shadow: 0 0 3px 3px var(--DivideColor);
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 5px;
 }
 .sumary__list button:hover {
   cursor: pointer;
-  background-color: var(--PrimaryColorL);
-  color: var(--PrimaryText);
+  background-color: rgb(0, 0, 0);
+  color: white;
 }
 .container__card {
-  background-color: var(--TextIcon);
+  background-color: white;
   width: 100%;
   min-height: 500px;
   padding: 4rem 0;
@@ -68,21 +65,21 @@ body {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  color: var(--PrimaryText);
+  color: white;
   gap: 2rem;
 }
 .card__user {
-  width: 300px;
+  width: fit-content;
   height: 250px;
-  padding: 2rem 1rem;
+  padding: 10px ;
   box-shadow: 0 0 5px var(--PrimaryColorD);
   border-radius: 5px;
-  background-color: var(--DivideColor);
+  background-color: rgb(8, 125, 157);
 }
 .card__user h3 {
   text-align: center;
   padding: 0.5rem;
-  border-bottom: 2px solid var(--PrimaryColorL);
+  border-bottom: 2px solid rgb(10, 68, 102);
 }
 .body__card {
   display: flex;
@@ -105,10 +102,10 @@ body {
   gap: 20px;
 }
 .user__controler .bx {
-  filter: drop-shadow(1px 1px var(--PrimaryColorD));
+  filter: drop-shadow(1px 1px black);
 }
 .bx-trash {
-  color: rgb(29, 195, 195);
+  color: rgb(242, 250, 250);
 }
 .card__user .bx:hover {
   transform: scale(1.2);
@@ -123,6 +120,8 @@ body {
   width: 100vw;
   height: 100vh;
   display: flex;
+  padding-left: 10px;
+  padding-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -130,7 +129,7 @@ body {
   z-index: 999;
 }
 .card__form {
-  background-color: white;
+  background-color: rgba(27, 130, 161, 0.8);
   width: 100%;
   max-width: 500px;
   height: 70vh;
@@ -145,12 +144,12 @@ body {
   height: 98%;
   padding: 3rem 1rem;
   border-radius: 20px;
-  text-align: center;
+  text-align: left;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: var(--PrimaryText);
+  color: black;
 }
 .border__form .bx {
   color: var(--PrimaryColorD);
@@ -159,8 +158,8 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  color: rgb(201, 17, 4);
-  filter: drop-shadow(0px 0px 2px var(--PrimaryColorD));
+  color: rgb(225, 12, 12);
+  filter: drop-shadow(0px 0px 2px black);
 }
 .bxs-x-circle:hover {
   cursor: pointer;
@@ -183,10 +182,12 @@ form {
 }
 input {
   height: 1.8rem;
-  background-color: var(--DivideColor);
+  background-color: white;
   border: none;
-  text-align: center;
+  text-align: left;
+  padding-left: 10px;
   border-radius: 5px;
+  color: black
 }
 .input-container {
   width: 100%;
@@ -251,10 +252,10 @@ input {
   border-radius: 5px;
   width: 30%;
   margin: 1rem 1rem;
-  background-color: rgb(245, 40, 40);
+  background-color: rgb(14, 68, 106);
   color: var(--TextIcon);
   height: 2rem;
-  filter: drop-shadow(0px 0px 2px var(--PrimaryText));
+  filter: drop-shadow(0px 0px 2px rgb(250, 254, 255));
   border: none;
   font-size: 1rem;
   font-weight: 800;
@@ -262,7 +263,7 @@ input {
 
 /* ===========FOOTER============*/
 footer {
-  background-color: #212121;
+  background-color: #153d54;
   height: 70px;
   display: flex;
   align-items: center;

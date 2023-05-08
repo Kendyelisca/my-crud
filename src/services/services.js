@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const BASE_URL = 'https://users-crud.academlo.tech/';
+const BASE_URL = 'https://user-crud-web.onrender.com/';
 
 export const getUser = async () => {
   try {
-    const res = await axios.get(BASE_URL + 'users/');
+    const res = await axios.get(BASE_URL + 'user');
 
     return res.data;
   } catch (error) {
@@ -13,7 +13,7 @@ export const getUser = async () => {
 };
 export const deleteUser = async (usersId) => {
   try {
-    await axios.delete(BASE_URL + `users/${usersId}/`);
+    await axios.delete(BASE_URL + `user/${usersId}/`);
 
     console.log(`El usuario con el id <${usersId}> fue eliminado`);
   } catch (error) {
@@ -23,7 +23,7 @@ export const deleteUser = async (usersId) => {
 
 export const updateUser = async (usersId, newDataUser) => {
   try {
-    await axios.put(BASE_URL + `users/${usersId}/`, newDataUser);
+    await axios.put(BASE_URL + `user/${usersId}/`, newDataUser);
 
     console.log(`El usuario ${newDataUser.name} fue actualizada exitosamente`);
   } catch (error) {
@@ -32,7 +32,7 @@ export const updateUser = async (usersId, newDataUser) => {
 };
 export const createUser = async (dataUser) => {
   try {
-    await axios.post(BASE_URL + 'users/', dataUser);
+    await axios.post(BASE_URL + 'user', dataUser);
 
     console.log('Se creo existosamente');
   } catch (error) {

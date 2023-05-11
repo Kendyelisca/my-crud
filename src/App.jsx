@@ -18,7 +18,7 @@ function App() {
 
   const getUsers = () => {
     axios
-      .get(`https://users-crud.academlo.tech/users/`)
+      .get(`https://user-crud-web.onrender.com/user`)
       .then((res) => setUsersList(res.data));
   };
 
@@ -36,7 +36,7 @@ function App() {
   //========DELETE/CANCEL DELETE(FUNCTION)====
   const deleteUser = (user) => {
     axios
-      .delete(`https://users-crud.academlo.tech/users/${user.id}/`)
+      .delete(`https://user-crud-web.onrender.com/user/${user.id}/`)
       .then(() => getUsers());
 
     setAlert(false);

@@ -13,7 +13,7 @@ export const getUser = async () => {
 };
 export const deleteUser = async (usersId) => {
   try {
-    await axios.delete(BASE_URL + `/user/${usersId}/`);
+    await axios.delete(BASE_URL + `/user/${usersId}`);
 
     console.log(`El usuario con el id <${usersId}> fue eliminado`);
   } catch (error) {

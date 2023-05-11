@@ -25,7 +25,7 @@ const UserForm = ({ getUsers, userSelected, setUserSelected, closeForm }) => {
     status();
     if (userSelected) {
       axios
-        .put(`https://user-crud-web.onrender.com/${userSelected.id}/`, data)
+        .put(`https://user-crud-web.onrender.com/user/${userSelected.id}`, data)
         .then(() => {
           getUsers();
         });

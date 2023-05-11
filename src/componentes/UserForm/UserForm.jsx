@@ -30,7 +30,7 @@ const UserForm = ({ getUsers, userSelected, setUserSelected, closeForm }) => {
           getUsers();
         });
     } else {
-      axios.post('https://user-crud-web.onrender.com/user/', data).then(() => {
+      axios.post('https://user-crud-web.onrender.com/user', data).then(() => {
         getUsers();
         reset(inputNull);
       });
